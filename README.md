@@ -9,14 +9,14 @@ This is a custom Chrome extension I wrote to replace the default new tab page in
 4. Select the load unpacked button and then select this directory 
 
 #TODO
-- [x]add clock
-- [x]use js to update clock
-- [ ]clock bounces around like dvd logo
-- [ ]add control panel
-- [ ]add switch to control bounce
-- [ ]link to portfolio
-- [ ]use unsplash API for collections
-- [ ]add switch to pick collections
-- [ ]separate controls panel page?
-- [ ]put on chrome store
-- [ ]add to portfolio
+- [x] add clock
+- [x] use js to update clock
+- [ ] clock bounces around like dvd logo
+- [ ] add control panel
+- [ ] add switch to control bounce
+- [ ] link to portfolio
+- [ ] use unsplash API for collections
+- [ ] add switch to pick collections
+- [ ] separate controls panel page?
+- [ ] put on chrome store
+- [ ] add to portfolio
