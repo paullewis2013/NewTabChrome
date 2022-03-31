@@ -9,12 +9,6 @@
         <meta name="description" content="New Tab">
         <meta name="author" content="Paul Lewis">
 
-        <!-- Sets open graph protocol metadata for website -->
-        <meta property="og:title" content="Paul Lewis New Tab" >
-        <meta property="og:type" content="website" >
-        <meta property="og:url" content="https://paullewis2013.github.io/Portfolio/" >
-        <meta property="og:image" content="imgs/favicon.png" >
-
         <!-- CSS and Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="index.css">
@@ -22,11 +16,24 @@
         <!-- Sets icon displayed in tab for website -->
         <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
         <link rel="icon" href="imgs/favicon.png" type="image/x-icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     </head>
 
     <body>
+        <div id="title">
+            <!-- <h1>Paul's New Tab Page</h1> -->
+            <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+        </div>
+        <!-- <div id="blur"></div> -->
         
-        <h1>Paul's new tab Page</h1>
+        <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+
+        <img id="background">
+
+        <script src="script.js"></script>
 
     </body>
 </html>
