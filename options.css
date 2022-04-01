@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:coral;
+}
+.toggleRow{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: baseline;
+    font-size: large;
+}
+.toggleRow p{
+    margin: 0;
+}
+#switches{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
+    background-color: floralwhite;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 15px;
+}

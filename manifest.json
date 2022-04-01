@@ -1,5 +1,5 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 2,
     "name": "Paul's New Tab Page",
     "version": "1.0",
     "description": "Paul's New Tab Page",
@@ -7,8 +7,12 @@
     "chrome_url_overrides" : {
       "newtab": "index.html"
     },
+    "browser_action" : {
+        "default_icon": "imgs/icon128.png",
+        "default_popup": "popup.html"  
+    },
     "permissions": [
-      "storage"
+        "storage"
     ],
     "icons": {
       "16": "imgs/icon16.png",

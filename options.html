@@ -1,0 +1,31 @@
+<!-- Paul Lewis -->
+<!doctype html>
+<html lang="en">
+    
+    <head>
+        <link rel="stylesheet" type="text/css" href="options.css">
+        <link rel="stylesheet" type="text/css" href="switch.css">
+    </head>
+
+    <body>
+        <h1>Options:</h1>
+
+        <div id="switches">
+            <div class="toggleRow">
+                <label class="switch" id="libraryCheckBackground">
+                    <input type="checkbox" id="libraryCheck" onclick="updateToggles()"><div></div>
+                </label> 
+                <p>Include Library Collection</p>
+            </div>
+    
+            <div class="toggleRow">
+                <label class="switch" id="plantCheckBackground">
+                    <input type="checkbox" id="plantCheck" onclick="updateToggles()"><div></div>
+                </label> 
+                <p>Include Plant Collection</p>
+            </div>
+        </div>
+        
+        <script src="optionsHandler.js"></script>
+    </body>
+</html>
