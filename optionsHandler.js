@@ -5,7 +5,7 @@ var activeColor = "green"
 
 function setToggles(){
     // Read it using the storage API
-    chrome.storage.sync.get(['library', 'plant'], function(items) {
+    chrome.storage.sync.get(['library', 'plant', 'green_arch'], function(items) {
         console.log(items);
         if(items.library == true){
             document.getElementById("libraryCheckBackground").style.background = activeColor
@@ -15,13 +15,21 @@ function setToggles(){
             document.getElementById("plantCheckBackground").style.background = activeColor
             document.getElementById("plantCheck").checked = true;
         }
+        if(items.green_arch == true){
+            document.getElementById("greenarchCheckBackground").style.background = activeColor
+            document.getElementById("greenarchCheck").checked = true;
+        }
     });
 }
 setToggles()
 
 function updateToggles(){
     // Save it using the Chrome extension storage API.
-    chrome.storage.sync.set({'library': document.getElementById("libraryCheck").checked, 'plant': document.getElementById("plantCheck").checked}, function() {
+    chrome.storage.sync.set({
+                                'library': document.getElementById("libraryCheck").checked,
+                                'plant': document.getElementById("plantCheck").checked,
+                                'green_arch': document.getElementById("greenarchCheck").checked,
+                            }, function() {
         console.log('Settings saved');
     });
     if(document.getElementById("libraryCheck").checked == true){
@@ -34,9 +42,15 @@ function updateToggles(){
     }else{
         document.getElementById("plantCheckBackground").style.background = inactiveColor
     }
+    if(document.getElementById("greenarchCheck").checked == true){
+        document.getElementById("greenarchCheckBackground").style.background = activeColor
+    }else{
+        document.getElementById("greenarchCheckBackground").style.background = inactiveColor
+    }
 }
 
 window.onload = function () {
     document.getElementById("libraryCheck").onclick = updateToggles;
     document.getElementById("plantCheck").onclick = updateToggles;
+    document.getElementById("greenarchCheck").onclick = updateToggles;
 }

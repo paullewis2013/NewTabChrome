@@ -100,8 +100,25 @@ imagesDict = {
     ],
     "architechture":[
 
+    ],
+    "green_arch":[
+        "https://images.unsplash.com/photo-1582896498393-ba1d3cabde41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1820&q=80",
+        "https://images.unsplash.com/photo-1485257334450-84ec1ba6393d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1772&q=80",
+        "https://images.unsplash.com/photo-1590393581117-0e382bb68fb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80",
+        "https://images.unsplash.com/photo-1568668718865-83b325bd3f89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1763&q=80",
+        "https://images.unsplash.com/photo-1630404991412-9504d094e8ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80",
+        "https://images.unsplash.com/photo-1569227997603-33b9f12af927?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+        "https://images.unsplash.com/photo-1572682579483-25915efe2a7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+        "https://images.unsplash.com/photo-1528545657093-2928f2e17013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80",
+        "https://images.unsplash.com/photo-1565599573128-ae3ef5c9f478?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+        "https://images.unsplash.com/photo-1554289701-069e9ecc1df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+        "https://images.unsplash.com/photo-1507097489474-c9212a8f8597?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80",
+        "https://images.unsplash.com/photo-1610212826958-56bbf3efc272?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+        "https://images.unsplash.com/photo-1494380963178-7e05eb8fe22c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+        "https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+        "https://images.unsplash.com/photo-1548763038-fc73f2a699bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+        "https://images.unsplash.com/photo-1506863571123-04bd1ac882c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80",
     ]
-    //green architechture
 }
 
 function selectImage(){
@@ -109,7 +126,7 @@ function selectImage(){
     // NOTE this is an asynchronous call and code below this function
     // may run before the callback function does
     // this drove me insane
-    chrome.storage.sync.get(['library', 'plant'], function(items) {
+    chrome.storage.sync.get(['library', 'plant', 'green_arch'], function(items) {
 
         //put all possible image links here
         var possibleImg = [];
@@ -119,6 +136,9 @@ function selectImage(){
         }
         if(items.plant == true){
             possibleImg.push(...imagesDict.plants)
+        }
+        if(items.green_arch == true){
+            possibleImg.push(...imagesDict.green_arch)
         }
         let i = ~~(Math.random() * possibleImg.length);
         let path = possibleImg[i];

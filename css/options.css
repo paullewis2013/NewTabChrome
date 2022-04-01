@@ -9,10 +9,12 @@ body{
     flex-direction: row;
     align-items: baseline;
     justify-content: baseline;
-    font-size: large;
+    padding: 10px;
 }
 .toggleRow p{
     margin: 0;
+    padding: 0;
+    font-size: 20px;
 }
 #switches{
     display: flex;
@@ -23,4 +25,13 @@ body{
     width: fit-content;
     border-radius: 20px;
     padding: 15px;
+    box-shadow:
+        2.8px 2.8px 2.8px 2.8px rgba(0, 0, 0, 0.034),
+        5.3px 5.3px 5.3px 5.3px rgba(0, 0, 0, 0.048),
+        12.5px 12.5px 12.5px 12.5px rgba(0, 0, 0, 0.06),
+        17.9px 17.9px 17.9px 17.9px rgba(0, 0, 0, 0.072),
+        33.4px 33.4px 33.4px 33.4px rgba(0, 0, 0, 0.086),
+        80px 80px 80px 80px rgba(0, 0, 0, 0.12),
+        0 100px 80px rgba(0, 0, 0, 0.12)
+    ;
 }
