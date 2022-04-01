@@ -1,6 +1,8 @@
 # New Tab Chrome
-
 This is a custom Chrome extension I wrote to replace the default new tab page in the Chrome browser
+
+# Image Attribution
+All images from Unsplash under the Unsplash license https://unsplash.com/license
 
 # Usage:
 1. download this directory locally
@@ -8,7 +10,7 @@ This is a custom Chrome extension I wrote to replace the default new tab page in
 3. toggle on developer mode
 4. Select the load unpacked button and then select this directory 
 
-#TODO
+# To do 
 - [x] add clock
 - [x] use js to update clock
 - [ ] clock bounces around like dvd logo

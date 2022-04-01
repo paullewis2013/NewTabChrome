@@ -1,0 +1,11 @@
+body{
+    width: 10em;
+    background-color: floralwhite;
+}
+#main{
+    display: flex;
+    border-radius: 10px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
