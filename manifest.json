@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Paul's New Tab Page",
-    "version": "1.0",
+    "version": "1.0.0",
     "description": "Paul's New Tab Page",
     "author": "Paul Lewis",
     "chrome_url_overrides" : {

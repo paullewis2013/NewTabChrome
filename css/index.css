@@ -20,7 +20,7 @@ html, body{
     transform: translateX(-50%) translateY(-50%);
     background-color: black;
     border-radius: 20px;
-    opacity: 60%;
+    opacity: 0%;
     z-index: 2;
 }
 #background{

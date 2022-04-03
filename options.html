@@ -8,9 +8,9 @@
     </head>
 
     <body>
-        <h1>Options:</h1>
-
+        
         <div id="switches">
+            <h1>Options:</h1>
 
             <p>Photo Collections:</p>
 
@@ -36,6 +36,20 @@
             </div>
 
             <p>Clock Controls:</p>
+
+            <div class="toggleRow">
+                <label class="switch" id="clockCheckBackground">
+                    <input type="checkbox" id="clockCheck" onclick="updateToggles()"><div></div>
+                </label> 
+                <p>Hide Clock</p>
+            </div>
+
+            <div class="toggleRow">
+                <label class="switch" id="secondsCheckBackground">
+                    <input type="checkbox" id="secondsCheck" onclick="updateToggles()"><div></div>
+                </label> 
+                <p>Hide Seconds</p>
+            </div>
 
         </div>
         
