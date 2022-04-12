@@ -7,8 +7,9 @@ html, body{
     overflow-y: hidden;
     display: flex;
     justify-content: center;
+    background-color: #AFE1AF;
 }
-#title{
+#content{
     position: fixed;
     display: flex;
     align-items: center;
@@ -31,17 +32,10 @@ html, body{
 #MyClockDisplay{
     display: flex;
     justify-content: center;
-}
-
-.clock {
     position: absolute;
     font-family: 'Roboto Mono', monospace;
-    /* top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%); */
     color: #eee8d5;
     font-size: 60px;
     width: 40vw;
-    /* font-family: Orbitron; */
     letter-spacing: 7px;
 }
