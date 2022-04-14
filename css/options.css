@@ -20,8 +20,8 @@ body{
     min-width: 32vw;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    justify-content: baseline;
+    align-items: center;
+    justify-content: center;
     background-color: floralwhite;
     width: fit-content;
     border-radius: 20px;
@@ -37,7 +37,10 @@ body{
         0 100px 80px rgba(0, 0, 0, 0.12)
     ;
 }
-#port{
-    align-items: center;
-    justify-content: center;
+#switches{
+    align-items: baseline;
+    justify-content: baseline;
+}
+.content img{
+    height: 3em;
 }

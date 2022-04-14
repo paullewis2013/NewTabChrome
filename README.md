@@ -13,15 +13,11 @@ All images from Unsplash under the Unsplash license https://unsplash.com/license
 # To do 
 - [x] add clock
 - [x] use js to update clock
-- [ ] add controls for bouncing clock
-- [ ] add functionality for bouncing clock
 - [x] add control panel
-- [ ] add link to portfolio on controls page
-- [ ] add 2 more collections
-- [ ] remove pictures I don't like
+- [x] add link to portfolio on controls page
 - [x] add switch to pick collections
-- [ ] reorder files
-- [ ] proof read and clean up code
+- [x] reorder files
+- [x] proof read and clean up code
+- [x] add to portfolio
 - [ ] create a developer account
 - [ ] put on chrome store
-- [ ] add to portfolio
