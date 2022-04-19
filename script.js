@@ -120,13 +120,14 @@ function selectImage(){
         //put all possible image links here
         var possibleImg = [];
 
-        if(items.library == true){
+        // inverted all of these because switches are set to off by default
+        if(items.library != true){
             possibleImg.push(...imagesDict.libraries)
         }
-        if(items.plant == true){
+        if(items.plant != true){
             possibleImg.push(...imagesDict.plants)
         }
-        if(items.green_arch == true){
+        if(items.green_arch != true){
             possibleImg.push(...imagesDict.green_arch)
         }
         let i = ~~(Math.random() * possibleImg.length);

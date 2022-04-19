@@ -7,7 +7,7 @@
     "chrome_url_overrides" : {
       "newtab": "index.html"
     },
-    "browser_action" : {
+    "action" : {
         "default_icon": "imgs/icon128.png",
         "default_popup": "popup.html"  
     },

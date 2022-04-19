@@ -19,5 +19,5 @@ All images from Unsplash under the Unsplash license https://unsplash.com/license
 - [x] reorder files
 - [x] proof read and clean up code
 - [x] add to portfolio
-- [ ] create a developer account
-- [ ] put on chrome store
+- [x] create a developer account
+- [x] put on chrome store
